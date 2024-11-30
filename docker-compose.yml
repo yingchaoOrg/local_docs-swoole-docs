@@ -2,11 +2,11 @@ services:
   dev:
     build:
       dockerfile: Dockerfile
-    image: ghcr.io/yingchaoorg/local_docs-swoole-docs:main
+    image: ghcr.io/yingchaoorg/local_docs-swoole-docs:v5.1.x
     privileged: false
     container_name: local_docs-swoole-docs
     volumes:
       - ./public:/usr/share/nginx/html
     tty: true
     ports:
-      - 34810:80
+      - 34811:80

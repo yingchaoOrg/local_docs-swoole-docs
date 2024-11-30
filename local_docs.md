@@ -4,12 +4,12 @@
 
 ## Docker操作
 
-docker build . -t ghcr.io/yingchaoorg/local_docs-swoole-docs:main
+docker build . -t ghcr.io/yingchaoorg/local_docs-swoole-docs:v5.1.x
 
 docker  stop local_docs-swoole-60-docs
 docker  rm local_docs-swoole-60-docs
 
-docker run -it  --name local_docs-swoole-60-docs -p 34810:80 -d --rm -v ./:/usr/share/nginx/html ghcr.io/yingchaoorg/local_docs-swoole-docs:main
+docker run -it  --name local_docs-swoole-60-docs -p 34811:80 -d --rm -v ./:/usr/share/nginx/html ghcr.io/yingchaoorg/local_docs-swoole-docs:v5.1.x
 
 docker  exec -it  local_docs-swoole-60-docs  bash
 
